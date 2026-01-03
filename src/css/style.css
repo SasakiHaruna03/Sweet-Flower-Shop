@@ -44,10 +44,12 @@ nav li {
   padding-right: 40px;
 }
 
-.title-logo {
-  margin-left: 40px;
+/* フッターのデザイン */
+.footer-img {
+  padding: 0 40px;
 }
 
+/* サムネイル&ロゴデザイン */
 .logo__image {
   max-width: 100%;
   margin: 0 40px;
@@ -61,6 +63,7 @@ nav li {
   margin-top: 68px;
 }
 
+/* 上部のコンテンツ */
 .content__top {
   display: flex;
   flex-direction: column;
@@ -70,11 +73,22 @@ nav li {
   text-align: center;
 }
 
+/* 下部のコンテンツ */
+.content__bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 200px 174px;
+  align-items: center;
+  align-self: stretch;
+}
+
+/* コンテンツ共通 */
 .content__desc {
   margin-top: 20px;
   margin-bottom: 40px;
 }
 
+/* 画像ギャラリー */
 .images {
   display: flex;
   gap: 20px;
@@ -82,6 +96,7 @@ nav li {
   margin-bottom: 75px;
 }
 
+/* セクションタイトル */
 .section__title {
   display: flex;
   flex-direction: column;
@@ -93,6 +108,7 @@ nav li {
   padding: 40px 0;
 }
 
+/* 記事全体 */
 .article {
   margin: 100px 40px;
 }
@@ -111,20 +127,14 @@ nav li {
   margin-bottom: 30px;
 }
 
+/* 下部の画像 */
 .catch-img {
   max-width: 100%;
   padding: 0 40px;
   align-items: center;
 }
 
-.content__bottom {
-  display: flex;
-  flex-direction: column;
-  padding: 200px 174px;
-  align-items: center;
-  align-self: stretch;
-}
-
+/* ボタン共通 */
 .button {
   display: flex;
   padding: 8px 12px 6px 12px;
@@ -133,8 +143,90 @@ nav li {
   gap: 10px;
 }
 
-.footer-img {
-  padding: 0 40px;
+/* 下部のコンテンツ */
+.content__bottom__gallery {
+  display: flex;
+  flex-direction: column;
+  padding: 150px 40px;
+  align-items: center;
+  align-self: stretch;
+}
+
+/* コンテンツ共通 */
+.content__desc {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* ボタン共通 */
+.button {
+  display: flex;
+  padding: 8px 12px 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 画像共通 */
+img {
+  max-width: 100%;
+}
+
+/* ギャラリー共通 */
+.title__gallery {
+  margin-bottom: 80px;
+  margin-top: 44px;
+  text-align: left;
+}
+
+.content__title.caption1 {
+  text-align: left;
+}
+
+.flower__list {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+.flower__title {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.list__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px 20px;
+}
+
+/* サービス共通 */
+.content__services {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  margin-top: 100px;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.services__item {
+  display: flex;
+  padding: 30px 0;
+  gap: 40px;
+}
+
+.services__text h1 {
+  text-align: left;
+}
+
+.services__img {
+  margin-left: 20px;
+  margin-right: 0;
 }
 
 .button {
@@ -190,6 +282,18 @@ h2 {
   letter-spacing: -1px;
 }
 
+.h4 {
+  color: var(--Text-Body-2, rgba(0, 0, 0, 0.6));
+  text-align: center;
+  /* Heading 4 */
+  font-family: Outfit;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 21px */
+  letter-spacing: -0.375px;
+}
+
 .caption1 {
   color: var(--Text-Caption, #575757);
   text-align: center;
@@ -200,6 +304,18 @@ h2 {
   font-weight: 700;
   line-height: 140%; /* 19.6px */
   letter-spacing: 0.28px;
+  text-transform: uppercase;
+}
+
+.caption2 {
+  color: var(--Text-Body-1, #2C2825);
+  text-align: center;
+  /* Caption 2 */
+  font-family: Outfit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
   text-transform: uppercase;
 }
 

@@ -7,7 +7,9 @@
 @use "layout/l-container";
 @use "layout/l-header";
 @use "layout/l-footer";
-@use "layout/l-main";
+@use "layout/l-main-home";
+@use "layout/l-main-gallery";
+@use "layout/l-main-about";
 
 // 3. Object (Component)
 @use "object/component/c-button";
