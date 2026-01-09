@@ -19,11 +19,12 @@ img, picture, video, canvas, svg {
 }
 
 html {
-  text-align: center;
   font-family: "Outfit", sans-serif;
 }
 
+/* 共通レイアウト */
 html {
+  text-align: center;
   margin: 0 40px;
 }
 
@@ -49,12 +50,12 @@ nav li {
   padding-right: 40px;
 }
 
+/* スマホのみパディングを追加 */
 @media screen and (max-width: 768px) {
   header {
     padding: 20px 16px;
   }
 }
-/* フッターのデザイン */
 .footer-img {
   padding: 0 40px;
 }
@@ -187,7 +188,7 @@ img {
   max-width: 100%;
 }
 
-/* ギャラリー共通 */
+/* ギャラリー共通（共通・スマホ用レイアウト） */
 .title__gallery {
   margin-bottom: 80px;
   margin-top: 44px;
@@ -219,6 +220,7 @@ img {
   display: block;
 }
 
+/* タブレット用にレイアウトを変更 */
 @media screen and (min-width: 768px) {
   .flower__list {
     gap: 10px;
@@ -240,6 +242,7 @@ img {
     margin-bottom: 40px;
   }
 }
+/* PC用にレイアウトを変更 */
 @media screen and (min-width: 1024px) {
   .flower__list {
     display: grid;
@@ -260,7 +263,7 @@ img {
     grid-column: 3/3;
   }
 }
-/* サービス共通 */
+/* サービス共通（共通・スマホ用レイアウト） */
 .services__list {
   display: flex;
   flex-direction: column;
@@ -311,6 +314,7 @@ img {
   margin-bottom: 40px;
 }
 
+/* タブレット用にレイアウトを変更 */
 @media screen and (min-width: 768px) {
   .content__services {
     display: grid;
@@ -325,6 +329,7 @@ img {
     flex-direction: row;
   }
 }
+/* PC用にレイアウトを変更 */
 @media screen and (min-width: 1024px) {
   .content__services {
     display: grid;
@@ -358,7 +363,7 @@ img {
   margin-bottom: 80px;
 }
 
-/* 内容 */
+/* 内容（共通・スマホ用レイアウト） */
 .our-story {
   display: grid;
   grid-template-columns: 1fr;
@@ -425,6 +430,7 @@ img {
   color: #2C2825;
 }
 
+/* タブレット用にレイアウトを変更 */
 @media screen and (min-width: 768px) {
   .our-story {
     display: grid;
@@ -446,6 +452,7 @@ img {
     object-fit: cover;
   }
 }
+/* PC用にレイアウトを変更 */
 @media screen and (min-width: 1024px) {
   .our-story {
     display: grid;
@@ -567,6 +574,7 @@ header a:hover {
     margin-bottom: 24px;
   }
 }
+/* テキスト・フォントの設定 */
 header > .title__logo {
   color: var(--Link-Link, #2C2825);
   /* Display */

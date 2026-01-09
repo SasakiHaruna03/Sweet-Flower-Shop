@@ -28,7 +28,8 @@ img {
     max-width: 100%;
 }
 
-/* ギャラリー共通 */
+
+/* ギャラリー共通（共通・スマホ用レイアウト） */
 .title__gallery {
     margin-bottom: 80px;
     margin-top: 44px;
@@ -60,6 +61,7 @@ img {
     display: block;
 }
 
+/* タブレット用にレイアウトを変更 */
 @media screen and (min-width: 768px) {
     .flower__list {
         gap: 10px;
@@ -86,6 +88,7 @@ img {
     }
 }
 
+/* PC用にレイアウトを変更 */
 @media screen and (min-width: 1024px) {
     .flower__list {
         display: grid;
@@ -110,7 +113,10 @@ img {
     }
 }
 
-/* サービス共通 */
+
+
+
+/* サービス共通（共通・スマホ用レイアウト） */
 
 .services__list {
     display: flex;
@@ -162,6 +168,7 @@ img {
     margin-bottom: 40px;
 }
 
+/* タブレット用にレイアウトを変更 */
 @media screen and (min-width: 768px) {
     .content__services {
         display: grid;
@@ -179,6 +186,7 @@ img {
     }
 }
 
+/* PC用にレイアウトを変更 */
 @media screen and (min-width: 1024px) {
     .content__services {
         display: grid;

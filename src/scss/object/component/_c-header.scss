@@ -52,7 +52,7 @@ header a:hover {
 
 @media screen and (max-width: 768px) {
     .title__logo {
-        position: relative; // z-indexを有効にするため
+        position: relative;
         z-index: 110;       /* メニュー背景(100)より手前に出す */
     }
     /* ハンバーガーボタンを表示する */

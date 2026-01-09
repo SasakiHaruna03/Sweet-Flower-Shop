@@ -21,7 +21,7 @@ img {
     margin-bottom: 80px;
 }
 
-/* 内容 */
+/* 内容（共通・スマホ用レイアウト） */
 .our-story {
     display: grid;
     grid-template-columns: 1fr;
@@ -88,6 +88,8 @@ img {
     color: #2C2825;
 }
 
+
+/* タブレット用にレイアウトを変更 */
 @media screen and (min-width: 768px) {
     .our-story {
         display: grid;
@@ -113,6 +115,7 @@ img {
     }
 }
 
+/* PC用にレイアウトを変更 */
 @media screen and (min-width: 1024px) {
     .our-story {
     display: grid;
