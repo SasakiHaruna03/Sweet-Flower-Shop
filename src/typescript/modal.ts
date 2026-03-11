@@ -11,10 +11,12 @@ const totalImages = images.length;
 let currentIndex = 0;
 
 function updateModal(index: number) {
-    if (!modalImg || !images[index]) return;
+    // images.item は存在しないインデックスで null を返すので型的に安全
+    const img = images.item(index);
+    if (!modalImg || !img) return;
     currentIndex = index;
-    modalImg.src = images[currentIndex].src;
-    modalImg.alt = images[currentIndex].alt;
+    modalImg.src = img.src;
+    modalImg.alt = img.alt;
 }
 
 //画像をクリックしたときに表示する
